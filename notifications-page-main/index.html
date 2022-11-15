@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Notifications page</title>
+  <script src="javascript.js"></script>
+
+
+</head>
+<body>
+  <div id="border">
+    <div class=" notion">
+      <div class="first">
+          <ol>
+              <li class="notifications">Notificações</li>
+              <!--<li> <input class="number" id="numero" type="text" value="3"></li>-->
+              <li class="number" id="number">3</li>
+              <li> <button id="btn1" type="button" onclick="clicar()">Mark all as read</button> </li>
+              
+          </ol>
+      </div>
+   
+    <div class="allperson" id="mark" onclick="checkmark()">
+    <img src="/assets/images/avatar-mark-webber.webp" alt="Foto do Mark">
+      <p> <span class="name"> Mark Webber</span> reacted to your recent post <span class="name">My first tournament today!  </span></br>
+      1m ago</p>
+      <div id="pointer1"></div>
+    </div>  
+    
+    <div class="allperson" id="angela" onclick="checkangela()" >  
+      <img src="/assets/images/avatar-angela-gray.webp" alt="Foto do Angela">
+      <p> <span class="name"> Angela Gray</span> followed you <br>
+      5m ago</p>
+      <div id="pointer2"></div>
+    </div>
+    
+    <div class="allperson" id="jacob" onclick="checkjacob()">  
+      <img src="/assets/images/avatar-jacob-thompson.webp" alt="Foto do jacob">
+      <p> <span class="name"> Jacob Thompson </span> has joined your group <span style="color:hsl(228, 45%, 44%); font-weight: 900;"> Chess Club</span></br>
+      1 day ago</p>
+      <div id="pointer3"></div>
+    </div>
+    <div class="allperson" id="rizky">  
+      <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="Foto do Rizky">
+      <p> <span class="name"> Rizky Hasanuddin</span> sent you a private message</br>
+      5 days ago</p>
+          <div class="textRizky"> Hello, thanks for setting up the  Chess  Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.</div>
+          </div>
+
+    <div class="allperson" id="kimberly">  
+      <img src="/assets/images/avatar-kimberly-smith.webp" alt="Foto de Kimberly">
+      <p> <span class="name"> Kimberly Smith</span> commented on your picture </br>
+      1 week ago</p>
+      <img id="chess" src="/assets/images/image-chess.webp" alt="foto xadrez">
+    </div>
+    <div class=" allperson" id="nathan">
+      <img src="/assets/images/avatar-nathan-peterson.webp" alt="Foto de Nathan">
+      <p> <span class="name"> Nathan Peterson</span> reacted to your recent post <span class="name"> 5 end-game strategies to  increase your win rate</span> <br>
+      2 weeks ago</p>
+    </div>  
+    <div class="allperson" id="anna">
+      <img src="/assets/images/avatar-anna-kim.webp" alt="Foto do anna">
+    <p><span class="name">Anna Kim</span> left the group<span style="color: hsl(228, 45%, 44%); font-weight:900;"> Chess Club</span>
+    <br> 2 weeks ago</p> 
+  </div>
+  </div>  
+  </div>
+</body>
+</html>
